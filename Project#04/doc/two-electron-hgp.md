@@ -1,0 +1,2 @@
+# Head-Gordon-Pople method
+

@@ -5,12 +5,12 @@ TODO:
 3. Prerequisites
 
 # Table of contents
-- [Project #01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301)
-- [Project #02](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2302)
-- [Project #03](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303)
-- [Project #04](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2304)
-- [Project #05](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2305)
-- [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306)
+- [Project #01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301): Something about C++ Programming.
+- [Project #02](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2302): Encapsulation of Matrix Class.
+- [Project #03](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303): The Hartree-Fock self-consistent field (SCF) procedure.
+- [Project #04](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2304): Molecular Integral Evaluation.
+- [Project #05](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2305): 
+- [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306): 
 - [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307)
 - [Project #08](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2308)
 - [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309)
