@@ -12,8 +12,8 @@ If you already master the syntax of C++ and you write high-quality C++ code, the
 ## Designing Vec3d Class
 
 
-* [vec3d.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project#01/vec3d-class/src/vec3d.hpp)
-* [vec3d.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project#01/vec3d-class/src/vec3d.cpp)
+* [vec3d.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301/vec3d-class/src/vec3d.hpp)
+* [vec3d.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/src/vec3d.cpp)
 
 
 
