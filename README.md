@@ -4,7 +4,9 @@ TODO:
 2. Purpose of writing this document
 3. Prerequisites
 
-# Table of contents
+## (Bugs Report)
+
+## Table of contents
 - [Project #01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301): Something about C++ Programming.
 - [Project #02](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2302): Encapsulation of Matrix Class.
 - [Project #03](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303): The Hartree-Fock self-consistent field (SCF) procedure.
@@ -26,7 +28,7 @@ TODO:
 - [Project #19](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2319)
 - [Project #20](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2320)
 
-# References
+## References
 - [*Quantum Chemistry (7th Edition)*. Ira N. Levine. Pearson, 2013.](https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450)
 - [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
 - [*Molecular Electronic-Structure Theory*. Trygve Helgaker, et al. Wiley, 2014.](https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477)

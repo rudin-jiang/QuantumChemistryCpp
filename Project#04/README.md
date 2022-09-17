@@ -43,13 +43,24 @@ public:
     std::size_t num2, num3, num4;           // used in operator()
     std::vector<double> eriVal;             // record eri
 
+    EriClass(std::size_t na, std::size_t nb,
+             std::size_t nc, std::size_t nd )
+    : angA(na), angB(nb), angC(nc), angD(nd),
+      nbsA((na+1)*(na+2)/2), nbsB((nb+1)*(nb+2)/2),
+      nbsC((nc+1)*(nc+2)/2), nbsD((nd+1)*(nd+2)/2),
+      num2(nbsB*nbsC*nbsD), num3(nbsC*nbsD), num4(nbsD)
+      eriVal(std::vector<double>(nbsA*nbsB*nbsC*nbsD)) {}
+
     // access single eri, must use operator()
     // don't use operator[], c++ allow one arguement in []
     // operator[i,j,k,l] is the same as operator[l]
     double  operator()(std::size_t i, std::size_t j,
-                       std::size_t k, std::size_t l) const ;
+                       std::size_t k, std::size_t l) const
+    { return eriVal[i*num2 + j*num3 + k*num4 + l]; }
+
     double& operator()(std::size_t i, std::size_t j,
-                       std::size_t k, std::size_t l);
+                       std::size_t k, std::size_t l)
+    { return eriVal[i*num2 + j*num3 + k*num4 + l]; }
 
     std::size_t size() const { return eriVal.size(); }
 };
@@ -59,6 +70,8 @@ public:
 
 
 ## 一些方法的实现
+
+
 
 ### Taketa-Huzinaga-Oohata Scheme
 
