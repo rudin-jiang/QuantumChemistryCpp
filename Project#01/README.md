@@ -9,14 +9,13 @@ If you already master the syntax of C++ and you write high-quality C++ code, the
 - [*Effective Modern C++*. Scott Meyers. O'Reilly, 2018](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996)
 
 
-## Designing Vec3d Class
+## Designing Class Vec3d
+
+In quantum chemistry programs, it is often necessary to define a data type to represent a point in three-dimensional space. In C++ programs, we generally define a class to represent a point.
 
 
 * [vec3d.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301/vec3d-class/src/vec3d.hpp)
 * [vec3d.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/src/vec3d.cpp)
-
-
-
 
 ## Namespace
 
@@ -70,6 +69,41 @@ vec3d-class
 ```
 
 
+```c++
+// include this header for google test
+#include <gtest/gtest.h>
+#include "vec3d.hpp"
+
+const double absErr = 1e-12;
+const double eps    = 1e-14;
+
+TEST(TestVec3d, TestConstructor) {
+    // default constructor
+    nhfMath::Vec3d v;
+    EXPECT_NEAR(v.x, 0, absErr);
+    EXPECT_NEAR(v.y, 0, absErr);
+    EXPECT_NEAR(v.z, 0, absErr);
+
+    // value constructor
+    for (double x = -10.0; x <= 10.0; x += 0.1){
+    for (double y = -10.0; y <= 10.0; y += 0.1){
+    for (double z = -10.0; z <= 10.0; z += 0.1){
+        nhfMath::Vec3d v(x, y, z);
+        EXPECT_NEAR(v.x, x, absErr);
+        EXPECT_NEAR(v.y, y, absErr);
+        EXPECT_NEAR(v.z, z, absErr);
+    }}}
+}
+```
+
+
+
+* [test_vec3d.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301/vec3d-class/test/test_vec3d.hpp)
 
 
 ## Benchmark
+
+> The content of this paragraph is not necessary. If you find it difficult to learn, you can first briefly skim through it to understand what this paragraph is introducing, and then learn it in the future when you feel it is necessary.
+
+
+

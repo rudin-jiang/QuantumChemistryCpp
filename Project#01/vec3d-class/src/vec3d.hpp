@@ -32,8 +32,8 @@ public:
     Vec3d&  operator/=(double val);
 };
 
-Vec3d  operator+(const Vec3d &vec);
-Vec3d  operator-(const Vec3d &vec);
+Vec3d  operator+(const Vec3d &vec); // positive
+Vec3d  operator-(const Vec3d &vec); // negative
 Vec3d  operator+(const Vec3d &vec1, const Vec3d &vec2);
 Vec3d  operator-(const Vec3d &vec1, const Vec3d &vec2);
 Vec3d  operator*(const Vec3d &vec1, const Vec3d &vec2);
