@@ -1,4 +1,4 @@
-# Project #03: The Hartree-Fock self-consistent field (SCF) procedure
+# Project #03: The Hartree-Fock SCF procedure
 
 
 ## Hartee-Fock Method Review

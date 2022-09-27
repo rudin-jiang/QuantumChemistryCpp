@@ -10,9 +10,9 @@ const double eps    = 1e-14;
 TEST(TestVec3d, TestConstructor) {
     // default constructor
     nhfMath::Vec3d v;
-    EXPECT_NEAR(v.x, 0, absErr);
-    EXPECT_NEAR(v.y, 0, absErr);
-    EXPECT_NEAR(v.z, 0, absErr);
+    EXPECT_NEAR(v.x, 0.0, absErr);
+    EXPECT_NEAR(v.y, 0.0, absErr);
+    EXPECT_NEAR(v.z, 0.0, absErr);
 
     // value constructor
     for (double x = -10.0; x <= 10.0; x += 0.1){
@@ -148,7 +148,6 @@ TEST(TestVec3d, TestCompoundOperator) {
 
 
 TEST(TestVec3d, TestNormOperator) {
-
     // positive and negative
     for (double x = -10.0; x <= 10.0; x += 0.1){
     for (double y = -10.0; y <= 10.0; y += 0.1){
