@@ -78,7 +78,7 @@ private:
 };
 ```
 
-Here I use `operator%` to represent matrix product for two reasons. First, the sum of two matrices represents the sum of the corresponding elements of the matrix, i.e. $\boldsymbol{C} = \boldsymbol{A} + \boldsymbol{B}$ means $\boldsymbol{C} _{ij} = \boldsymbol{A} _{ij} + \boldsymbol{B} _{ij}$ . To ensure consistency of interfaces, $\boldsymbol{C} = \boldsymbol{A} * \boldsymbol{B}$ means $\boldsymbol{C} _{ij} = \boldsymbol{A} _{ij} * \boldsymbol{B} _{ij}$ . So the `operator*` is not used to represent matrix multiplication. Second, in C++, an overloaded operator has the same precedence and associativity as the corresponding built-in operator. To ensure that the overloaded matrix multiplication number has the same precedence and associativity in the program as in the mathematics, only `operator%` satisfies the requirements.
+Here I use `operator%` to represent matrix product for two reasons. First, the sum of two matrices represents the sum of the corresponding elements of the matrix, i.e. $\boldsymbol{C} = \boldsymbol{A} + \boldsymbol{B}$ means $\boldsymbol{C} _{ij} = \boldsymbol{A} _{ij} + \boldsymbol{B} _{ij}$ . To ensure consistency of interfaces, $\boldsymbol{C} = \boldsymbol{A} * \boldsymbol{B}$ means $\boldsymbol{C} _{ij} = \boldsymbol{A} _{ij} * \boldsymbol{B} _{ij}$ . So the `operator*` is not used to represent matrix multiplication. Second, in C++, an overloaded operator has the same precedence and associativity as the corresponding built-in operator. To ensure that the overloaded operator for matrix multiplication has the same precedence and associativity in the program as in the mathematics, only `operator%` satisfies the requirements.
 
 计算eigenvalues和eigenvectors是使用的一个类来实现的，而不是使用类成员函数来实现，主要是因为一个矩阵的eigenvalues和eigenvectors可以同时计算，如果写两个类成员函数`Matrix::eigenVal()` 和 `Matrix::eigenVec()` 分别调用这两个函数时，有一部分计算重复了。解决这个问题的一个方法是将这个两个成员函数合并一个`Matrix::eigenValVec()`，返回一个`std::pair<Matrix, Matrix>`分别记录eigenvalues和eigenvectors。这里我们使用 [Eigen](https://eigen.tuxfamily.org/dox/classEigen_1_1SelfAdjointEigenSolver.html) 中使用的解决方法，定义一个类专门求解矩阵的eigen问题。另外，由于在量化计算中，我们通常遇到的本征值问题是对称矩阵，所以这里我们暂时先设计这个。下面是我给出的参考设计。
 
@@ -118,19 +118,6 @@ Eigen is
 
 ## Unit Testing
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301#Unit-Testing) we have introduced what unit testing is and how to add unit testing modules to our own projects. Similarly, we will add unit testing modules to the matrix class to increase the reliability of our codes. Here is the testing module I have written for the matrix class.
+- [test_matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/test/test_matrix.cpp)
 
