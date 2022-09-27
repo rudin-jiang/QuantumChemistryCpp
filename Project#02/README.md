@@ -118,6 +118,6 @@ Eigen is
 
 ## Unit Testing
 
-In [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301#Unit-Testing) we have introduced what unit testing is and how to add unit testing modules to our own projects. Similarly, we will add unit testing modules to the matrix class to increase the reliability of our codes. Here is the testing module I have written for the matrix class.
+In [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301#unit-testing) we have introduced what unit testing is and how to add unit testing modules to our own projects. Similarly, we will add unit testing modules to the matrix class to increase the reliability of our codes. Here is the testing module I have written for the matrix class.
 - [test_matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/test/test_matrix.cpp)
 

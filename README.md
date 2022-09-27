@@ -15,7 +15,7 @@ TODO:
 - [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306): Hartree-Fock Hessian 和频率计算
 - [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307): 波函数初猜和加速SCF收敛
 - [Project #08](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2308): DFT
-- [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309)：CI
+- [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309): CI
 - [Project #10](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2310)
 - [Project #11](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2311)
 - [Project #12](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2312)
