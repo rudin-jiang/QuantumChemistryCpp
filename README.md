@@ -10,8 +10,7 @@ TODO:
 * Submit bugs and improve the quality of code
 * Make a suggestion for improving the document
 
-In any of the above situations, you can contact me via the email below. I would greatly appreciate receiving any suggestions that readers may have for improving the document. 
-* [rudin-jiang.gmail.com](mailto:rudin-jiang.gmail.com)
+In any of the above situations, you can contact me via [email](mailto:rudin.jiang@gmail.com). I would greatly appreciate receiving any suggestions that readers may have for improving the document.
 
 ## Table of contents
 - [Project #01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301): Something about C++ Programming.
