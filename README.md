@@ -4,7 +4,14 @@ TODO:
 2. Purpose of writing this document
 3. Prerequisites
 
-## (Bugs Report)
+## Feedback
+* Ask a question where you don't understand
+* Spot incorrect or incomprehensible expressions
+* Submit bugs and improve the quality of code
+* Make a suggestion for improving the document
+
+In any of the above situations, you can contact me via the email below. I would greatly appreciate receiving any suggestions that readers may have for improving the document. 
+* [rudin-jiang.gmail.com](mailto:rudin-jiang.gmail.com)
 
 ## Table of contents
 - [Project #01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301): Something about C++ Programming.
@@ -16,7 +23,7 @@ TODO:
 - [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307): 波函数初猜和加速SCF收敛
 - [Project #08](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2308): DFT
 - [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309): CI
-- [Project #10](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2310)
+- [Project #10](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2310): 
 - [Project #11](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2311)
 - [Project #12](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2312)
 - [Project #13](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2313)
@@ -32,3 +39,8 @@ TODO:
 - [*Quantum Chemistry (7th Edition)*. Ira N. Levine. Pearson, 2013.](https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450)
 - [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
 - [*Molecular Electronic-Structure Theory*. Trygve Helgaker, et al. Wiley, 2014.](https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477)
+
+## Acknowledge
+It is a pleasure to thank those people who helped me with different aspects of this document.
+- *Lingxiao Zhan* helped me improve the English expression in the document.
+<!-- - *Luoyan Yu*  -->

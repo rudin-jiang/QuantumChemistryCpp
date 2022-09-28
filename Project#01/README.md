@@ -34,6 +34,11 @@ g++ -o prog source.cpp
 But when we try to build a large program, things get complicated. 
 
 
+```shell
+cmake -B build 
+cmake --build build
+```
+
 
 ## Unit Testing
 
@@ -74,15 +79,16 @@ vec3d-class
 #include <gtest/gtest.h>
 #include "vec3d.hpp"
 
+// absolute error, used to determine whether 
+// two floating-point numbers are equal
 const double absErr = 1e-12;
-const double eps    = 1e-14;
 
 TEST(TestVec3d, TestConstructor) {
     // default constructor
     nhfMath::Vec3d v;
-    EXPECT_NEAR(v.x, 0, absErr);
-    EXPECT_NEAR(v.y, 0, absErr);
-    EXPECT_NEAR(v.z, 0, absErr);
+    EXPECT_NEAR(v.x, 0.0, absErr);
+    EXPECT_NEAR(v.y, 0.0, absErr);
+    EXPECT_NEAR(v.z, 0.0, absErr);
 
     // value constructor
     for (double x = -10.0; x <= 10.0; x += 0.1){

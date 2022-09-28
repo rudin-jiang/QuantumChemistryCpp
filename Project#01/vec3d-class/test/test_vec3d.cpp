@@ -4,6 +4,8 @@
 #include <cmath>
 #include "vec3d.hpp"
 
+// absolute error, used to determine whether 
+// two floating-point numbers are equal
 const double absErr = 1e-12;
 const double eps    = 1e-14;
 
