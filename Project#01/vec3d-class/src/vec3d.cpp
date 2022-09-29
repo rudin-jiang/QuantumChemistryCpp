@@ -35,6 +35,21 @@ std::string Vec3d::to_string() const {
     return std::string(buff);
 }
 
+/* access operator */
+double  Vec3d::operator[](std::size_t i) const {
+    assert(i < 3);
+    if (i == 0) return x;
+    if (i == 1) return y;
+    return z;
+}
+
+double& Vec3d::operator[](std::size_t i) {
+    assert(i < 3);
+    if (i == 0) return x;
+    if (i == 1) return y;
+    return z;
+}
+
 /* member operators */
 Vec3d&  Vec3d::operator+=(const Vec3d &vec) { x += vec.x; y += vec.y; z += vec.z; return *this; }
 Vec3d&  Vec3d::operator-=(const Vec3d &vec) { x -= vec.x; y -= vec.y; z -= vec.z; return *this; }

@@ -20,7 +20,6 @@ endif()
 
 add_subdirectory(src)
 
-
 # test and benchmark
 add_subdirectory(extern/googletest)
 # add_subdirectory(extern/benchmark)

@@ -19,7 +19,11 @@ public:
     /* member functions */
     double  len() const;
     double  len2() const;
-    std::string to_string() const; 
+    std::string to_string() const;
+
+    /* access operator */
+    double  operator[](std::size_t i) const;
+    double& operator[](std::size_t i);
 
     /* compound operators */
     Vec3d&  operator+=(const Vec3d &vec);

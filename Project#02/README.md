@@ -11,6 +11,8 @@
 
 ## Designing Interface
 
+Designing an interface is a job that requires experience accumulation, and many aspects need to be considered.
+
 ```c++
 class Matrix {
 public:

@@ -73,6 +73,32 @@ TEST(TestVec3d, TestToString) {
     }}}
 }
 
+TEST(TestVec3d, TestAccessOperator) {
+
+    // read test
+    for (double x = -10.0; x <= 10.0; x += 0.1){
+    for (double y = -10.0; y <= 10.0; y += 0.1){
+    for (double z = -10.0; z <= 10.0; z += 0.1){
+        nhfMath::Vec3d v(x, y, z);
+        EXPECT_NEAR(v[0], x, absErr);
+        EXPECT_NEAR(v[1], y, absErr);
+        EXPECT_NEAR(v[2], z, absErr);
+    }}}
+
+    // write test
+    for (double x = -10.0; x <= 10.0; x += 0.1){
+    for (double y = -10.0; y <= 10.0; y += 0.1){
+    for (double z = -10.0; z <= 10.0; z += 0.1){
+        nhfMath::Vec3d v;
+        v[0] = x;
+        v[1] = y;
+        v[2] = z;
+        EXPECT_NEAR(v.x, x, absErr);
+        EXPECT_NEAR(v.y, y, absErr);
+        EXPECT_NEAR(v.z, z, absErr);
+    }}}
+}
+
 TEST(TestVec3d, TestCompoundOperator) {
     // Vec3d and Vec3d
     for (double x1 = -10.0; x1 <= 10.0; x1 += 2.5){

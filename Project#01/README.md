@@ -9,7 +9,7 @@ If you already master the syntax of C++ and you write high-quality C++ code, the
 - [*Effective Modern C++*. Scott Meyers. O'Reilly, 2018](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996)
 
 
-## Designing Class Vec3d
+## Designing Vec3d Class
 
 In quantum chemistry programs, it is often necessary to define a data type to represent a point in three-dimensional space. In C++ programs, we generally define a class to represent a point.
 
@@ -17,21 +17,30 @@ In quantum chemistry programs, it is often necessary to define a data type to re
 * [vec3d.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/src/vec3d.hpp)
 * [vec3d.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/src/vec3d.cpp)
 
+
 ## Namespace
 
+> Large programs tend to use independently developed libraries. Such libraries also tend to define a large number of global names, such as classes, functions, and templates. When an application uses libraries from many different vendors, it is almost inevitable that some of these names will clash. [Namespaces](https://en.cppreference.com/w/cpp/language/namespace) provide a controlled mechanism for preventing name collisions. Namespaces partition the global namespace. A namespace is a scope. By defining a library’s names inside a namespace, library authors (and users) can avoid the limitations inherent in global names.
+
+
+
+
+在使用 namespace 时需要注意的一些地方
+
+* 不要在namespace内部include头文件
+* 不要在namespace内部using其他namespace
+* 
 
 
 
 
 ## Building with CMake
 
-if we want to compile a simple program with a single source file `source.cpp` , we can directly compile it by calling the compiler.
+When we want to develop large programs, we often need to use build tools. There are many build tools, here we use [CMake](https://cmake.org). CMake is a cross-platform build tool. 
 
-```shell
-g++ -o prog source.cpp
-```
+[CMake Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
 
-But when we try to build a large program, things get complicated. 
+
 
 
 ```shell
