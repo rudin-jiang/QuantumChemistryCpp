@@ -12,10 +12,11 @@ This article will discuss some properties and implementations of this function.
 ## Properties of Boys Function
 
 
+## 常用的计算方法
+
+
 
 ## Get Function Values with High Precision
-
-
 
 * Matlab
     ```matlab
@@ -29,12 +30,6 @@ This article will discuss some properties and implementations of this function.
     ```mathematica
     boysfun[n_, x_] := NIntegrate[t^(2*n) * Exp[-x*t^2], {t,0,1}, PrecisionGoal -> 14];
     ```
-
-
-
-## 
-
-
 
 
 
@@ -59,3 +54,4 @@ This article will discuss some properties and implementations of this function.
 ## Reference
 
 * MEST
+

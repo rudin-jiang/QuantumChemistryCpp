@@ -1,5 +1,8 @@
 # Project #01: Something about C++ Programming
 
+
+
+
 If you are new to C++, the following book will be a good textbook.
 - [*C++ Primer (5th Edition)*. Stanley B. Lippman, et al. Addison-Wesley, 2013.](https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113)
 
@@ -36,7 +39,9 @@ In quantum chemistry programs, it is often necessary to define a data type to re
 
 ## Building with CMake
 
-When we want to develop large programs, we often need to use build tools. There are many build tools, here we use [CMake](https://cmake.org). CMake is a cross-platform build tool. 
+
+
+When we want to develop large programs, we often need to use build tools. There are many build tools, here we use [CMake](https://cmake.org). CMake is a cross-platform build tool.
 
 [CMake Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
 
@@ -83,6 +88,9 @@ vec3d-class
 ```
 
 
+
+
+
 ```c++
 // include this header for google test
 #include <gtest/gtest.h>
@@ -111,7 +119,7 @@ TEST(TestVec3d, TestConstructor) {
 }
 ```
 
-
+下面是我实现的测试代码，给大家参考
 
 * [test_vec3d.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/test/test_vec3d.cpp)
 
@@ -121,4 +129,9 @@ TEST(TestVec3d, TestConstructor) {
 > The content of this paragraph is not necessary. If you find it difficult to learn, you can first briefly skim through it to understand what this paragraph is introducing, and then learn it in the future when you feel it is necessary.
 
 
+1. 什么是benchmark
+2. 为什么要做benchmark
+3. 如何做benchmark
 
+
+Clone [Google Benchmark](https://github.com/google/benchmark) in `extern` directory and 

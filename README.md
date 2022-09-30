@@ -1,8 +1,16 @@
 # Quantum Chemistry Cpp
-TODO:
-1. Introduction to this document
-2. Purpose of writing this document
-3. Prerequisites
+
+## Introduction
+
+
+## Purpose
+It was around 2018 when I first started writing quantum chemistry programs. I was lucky enough to find a great tutorial from [Crawford Group](https://crawford.chem.vt.edu/) as well as an easy to understand book. 
+
+
+
+## Prerequisites
+* Quantum Chemistry, it is best to have taken a relevant course or read a book on this subject.
+* C++ programming experience (500-1000 lines of code) and basic data structures.
 
 ## Feedback
 * Ask a question where you don't understand
@@ -35,11 +43,14 @@ In any of the above situations, you can contact me via [email](mailto:rudin.jian
 - [Project #20](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2320)
 
 ## References
+
+[^1]: ProgrammingProjects [https://github.com/CrawfordGroup/ProgrammingProjects](https://github.com/CrawfordGroup/ProgrammingProjects)
+
 - [*Quantum Chemistry (7th Edition)*. Ira N. Levine. Pearson, 2013.](https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450)
 - [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
 - [*Molecular Electronic-Structure Theory*. Trygve Helgaker, et al. Wiley, 2014.](https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477)
 
 ## Acknowledge
 It is a pleasure to thank those people who helped me with different aspects of this document.
-- *Lingxiao Zhan* helped me improve the English expression in the document.
-<!-- - *Luoyan Yu*  -->
+- *Lingxiao Zhan* helped me improve the English expression in this document.
+- *Luoyan Yu* helped me review 
