@@ -47,10 +47,10 @@ It is a pleasure to thank those people who helped me with different aspects of t
 <!-- - *Luoyan Yu* helped me review this document. -->
 
 ## References
-<a id="ref1"></a> [1] [*Programming Projects* from Crawford Group](https://github.com/CrawfordGroup/ProgrammingProjects)
-<a id="ref2"></a> [2] [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
-<a id="ref3"></a> [3] [*Quantum Chemistry (7th Edition)*. Ira N. Levine. Pearson, 2013.](https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450)
-<a id="ref4"></a> [4] [*Molecular Electronic-Structure Theory*. Trygve Helgaker, et al. Wiley, 2014.](https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477)
+* <a id="ref1"></a> [1] [*Programming Projects* from Crawford Group](https://github.com/CrawfordGroup/ProgrammingProjects)
+* <a id="ref2"></a> [2] [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
+* <a id="ref3"></a> [3] [*Quantum Chemistry (7th Edition)*. Ira N. Levine. Pearson, 2013.](https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450)
+* <a id="ref4"></a> [4] [*Molecular Electronic-Structure Theory*. Trygve Helgaker, et al. Wiley, 2014.](https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477)
 
 
 
