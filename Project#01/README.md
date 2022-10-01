@@ -1,20 +1,24 @@
 # Project #01: Something about C++ Programming
 
+This tutorial mainly teaches you how to write your own quantum chemistry programs, and programming skills in C++ should be a prerequisite. Here are some things you should know.
 
+* The fundamentals of C++: variables, expressions, statements, control structures and functions.
+* Classes and objects. You'd better understand some object-oriented programming ideas.
+* The Standard Template Library (STL). Be able to use vector, set and map at least.
 
+If you are new to C++, you can start by reading the section of [Crawford group's tutorial](https://github.com/CrawfordGroup/ProgrammingProjects#c-programming-tutorial-in-chemistry) that introduces C++. You can go back to some of the material when you need to use some of the features you don't know yet. If you want to master C++ more comprehensively, I recommend you to read the following book.
 
-If you are new to C++, the following book will be a good textbook.
 - [*C++ Primer (5th Edition)*. Stanley B. Lippman, et al. Addison-Wesley, 2013.](https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113)
 
-If you already master the syntax of C++ and you write high-quality C++ code, the following books will help you.
-- [*Effective C++ (3rd Edition)*. Scott Meyers. Addison-Wesley, 2017](https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876)
-- [*More effective C++*. Scott Meyers. Addison-Wesley, 2014](https://www.amazon.com/More-Effective-Improve-Programs-Designs/dp/020163371X)
-- [*Effective Modern C++*. Scott Meyers. O'Reilly, 2018](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996)
 
+In this project, we will write a class that is often used in quantum chemistry programs to help us review the C++ language. At the same time we will also learn some tools that are often used when writing large programs.
 
 ## Designing Vec3d Class
 
 In quantum chemistry programs, it is often necessary to define a data type to represent a point in three-dimensional space. In C++ programs, we generally define a class to represent a point.
+
+
+
 
 
 * [vec3d.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/src/vec3d.hpp)
@@ -88,9 +92,6 @@ vec3d-class
 ```
 
 
-
-
-
 ```c++
 // include this header for google test
 #include <gtest/gtest.h>
@@ -135,3 +136,8 @@ TEST(TestVec3d, TestConstructor) {
 
 
 Clone [Google Benchmark](https://github.com/google/benchmark) in `extern` directory and 
+
+
+## Reference
+
+<a>
