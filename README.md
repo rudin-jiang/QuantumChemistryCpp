@@ -1,12 +1,10 @@
 # Quantum Chemistry Cpp
 
 ## Introduction
-
+This document focuses on how to write quantum chemistry programs with C++. In addition to how to write the program, this document also focuses on giving detailed references and some programming language details that can reduce bugs and make the program run faster.
 
 ## Purpose
-It was around 2018 when I first started writing quantum chemistry programs. I was lucky enough to find a great tutorial from [Crawford Group](https://crawford.chem.vt.edu/) as well as an easy to understand book. 
-
-
+It was around 2018 when I first started writing quantum chemistry programs. I was lucky enough to find a great tutorial[<sup>[1]</sup>](#ref1) from [Crawford Group](https://crawford.chem.vt.edu) as well as an easy to understand book.[<sup>[2]</sup>](#ref2) As I learned more, I found some other references that were also helpful in writing quantum chemistry programs. I hope to use this document to list them and point out some key points in programming so that future learners can avoid detours.
 
 ## Prerequisites
 * Quantum Chemistry, it is best to have taken a relevant course or read a book on this subject.
@@ -42,15 +40,17 @@ In any of the above situations, you can contact me via [email](mailto:rudin.jian
 - [Project #19](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2319)
 - [Project #20](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2320)
 
-## References
-
-[^1]: ProgrammingProjects [https://github.com/CrawfordGroup/ProgrammingProjects](https://github.com/CrawfordGroup/ProgrammingProjects)
-
-- [*Quantum Chemistry (7th Edition)*. Ira N. Levine. Pearson, 2013.](https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450)
-- [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
-- [*Molecular Electronic-Structure Theory*. Trygve Helgaker, et al. Wiley, 2014.](https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477)
 
 ## Acknowledge
 It is a pleasure to thank those people who helped me with different aspects of this document.
 - *Lingxiao Zhan* helped me improve the English expression in this document.
-- *Luoyan Yu* helped me review 
+<!-- - *Luoyan Yu* helped me review this document. -->
+
+## References
+<a id="ref1"></a> [1] [*Programming Projects* from Crawford Group](https://github.com/CrawfordGroup/ProgrammingProjects)
+<a id="ref2"></a> [2] [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
+<a id="ref3"></a> [3] [*Quantum Chemistry (7th Edition)*. Ira N. Levine. Pearson, 2013.](https://www.amazon.com/Quantum-Chemistry-7th-Ira-Levine/dp/0321803450)
+<a id="ref4"></a> [4] [*Molecular Electronic-Structure Theory*. Trygve Helgaker, et al. Wiley, 2014.](https://www.amazon.com/Molecular-Electronic-Structure-Theory-Trygve-Helgaker/dp/1118531477)
+
+
+
