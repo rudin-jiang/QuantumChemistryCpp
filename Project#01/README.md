@@ -27,6 +27,18 @@ In quantum chemistry programs, it is often necessary to define a data type to re
 
 ## Namespace
 
+```c++
+namespace nhfMath {
+
+// something about Vec3d class
+
+}
+```
+
+
+
+
+
 > Large programs tend to use independently developed libraries. Such libraries also tend to define a large number of global names, such as classes, functions, and templates. When an application uses libraries from many different vendors, it is almost inevitable that some of these names will clash. [Namespaces](https://en.cppreference.com/w/cpp/language/namespace) provide a controlled mechanism for preventing name collisions. Namespaces partition the global namespace. A namespace is a scope. By defining a library’s names inside a namespace, library authors (and users) can avoid the limitations inherent in global names.
 
 
@@ -90,6 +102,9 @@ vec3d-class
 └───extern
     │   googletest
 ```
+
+
+
 
 
 ```c++
