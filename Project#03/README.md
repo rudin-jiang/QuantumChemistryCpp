@@ -23,10 +23,14 @@ In this project, we will learn some basics of basis functions and molecular inte
 
 ## 早期的分子积分算法 THO
 
+在这一个项目的余下部分我们将实现一个具体的分子积分算法，THO算法。这个算法是最早的能计算任意角动量的笛卡尔坐标高斯基组的算法。虽然计算效率不高，但是算法实现起来比较简单，适合刚接触分子积分的人写。在实现这个算法的过程中，我将指出这个算法不高效的地方，为理解后来的更高效的算法奠定基础。与此同时，我们也将使用这个算法计算的积分数值，与后来提出的算法进行对拍，以作为后来的算法的测试模块。
+
+THO积分算法的核心是将
+
 
 ## Boys Function
 
-Boys 
+Boys functiuon
 
 $$
 F_n(x) = \int_{0}^{1} t^{2n} \exp(-xt^2)  {\rm d} t

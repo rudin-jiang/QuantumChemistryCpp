@@ -1,9 +1,9 @@
 # Quantum Chemistry Cpp
 
-This document focuses on how to write quantum chemistry programs with C++. Besides, relevant references about algorithms and some programming language tricks will also be presented here in order to reduce potential bugs and make the program run faster.
+This document focuses on how to write quantum chemistry programs with C++. Besides, relevant references about algorithms and some programming language tricks will also be presented here in order to reduce potential bugs and make programs run faster.
 
 ## Purpose
-It was around 2018 when I first started writing quantum chemistry programs. I was lucky enough to find a great tutorial[<sup>[1]</sup>](#ref1) from [Crawford Group](https://crawford.chem.vt.edu) as well as an book easy to understand.[<sup>[2]</sup>](#ref2) As I learned more, I found some other references that were also helpful in writing quantum chemistry programs. The aim of the project is to summarize the useful tutorials and some key points in programming so that future learners can avoid detours.
+It was around 2018 when I first started writing quantum chemistry programs. I was lucky enough to find a great tutorial[<sup>[1]</sup>](#ref1) from [Crawford Group](https://crawford.chem.vt.edu) as well as a book easy to understand.[<sup>[2]</sup>](#ref2) As I learned more, I found some other references that were also helpful in writing quantum chemistry programs. The aim of the project is to summarize the useful tutorials and some key points in programming so that future learners can avoid detours.
 
 ## Prerequisites
 * Quantum chemistry, it is best to have taken a relevant course or read a book on this subject.

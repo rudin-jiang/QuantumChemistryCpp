@@ -27,6 +27,8 @@ In quantum chemistry programs, it is often necessary to define a data type to re
 
 ## Namespace
 
+
+
 ```c++
 namespace nhfMath {
 
