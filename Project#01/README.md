@@ -54,6 +54,9 @@ namespace nhfMath {
 
 
 
+在这个项目中，我将把所有与数学有关的内容放在 `nhfMath` 的命名空间中，把所有与分子积分有关的内容放在 `nhfInt` 命名空间中，将其他量化计算的内容放在 `nhf` 的命名空间中。
+
+
 
 ## Building with CMake
 

@@ -1,22 +1,15 @@
 # Boys Function
-
-Boys function $F_n(x)$ plays an important role in in the evaluation of molecular integrals over Gaussian functions. The Boys function is defined by
+Boys function $F_n(x)$ plays an important role in the evaluation of molecular integrals over Gaussian functions. The Boys function is defined by
 
 $$
 F_n(x) = \int_{0}^{1} t^{2n} \exp (-xt^2) \  {\rm d} t
 $$
 
-$$
-F_n(x) = \int_{0}^{1} t^{2n} \exp (-xt^2) {\rm d} t
-$$
-
 where $x \geq 0$ and $n \in \mathbb{Z}$.
 
-This article will discuss some properties and implementations of this function.
-
+（This article will discuss some properties and implementations of this function.）
 
 ## Properties of Boys Function
-
 * Because the integrand functions are positive in the integration interval, the integral values are positive.
 $$F_n(x) > 0$$
 
@@ -26,14 +19,14 @@ $$\frac{{\rm d} F_n(x)}{{\rm d} x} = -F_{n+1}(x) < 0$$
 * Boys function is monotonically decreasing with respect to $n$.
 $$F_{n+1}(x) < F_n(x)$$
 
-* Boys function is monotonically decreasing with respect to $x$. For $\Delta x > 0$, we obtain
+* Boys function is monotonically decreasing with respect to $x$. For $\Delta x > 0$, we have
 $$F_n(x + \Delta x) < F_n(x)$$
 
 * The values at $x = 0$ may be expressed in closed form 
-$$F_n(0) = \int_{0}^{1} t^{2n} \, {\rm d} t = \frac{1}{2 n + 1}$$
+$$F_n(0) = \int_{0}^{1} t^{2n} \  {\rm d} t = \frac{1}{2 n + 1}$$
 
 * For large values of $x$, we may determine the Boys function approximately from
-$$F_n(x) = \int_{0}^{1} \exp(-x t^2) \, t^{2n} \,{\rm d} t \approx \int_{0}^{\infty} \exp(-x t^2) \, t^{2n} \, {\rm d} t = \frac{(2n-1)!!}{2^{n+1}}\sqrt{\frac{\pi}{x^{2n+1}}}$$
+$$F_n(x) = \int_{0}^{1} t^{2n} \exp(-x t^2) \  {\rm d} t \approx \int_{0}^{\infty} t^{2n} \exp(-x t^2) \  {\rm d} t = \frac{(2n-1)!!}{2^{n+1}}\sqrt{\frac{\pi}{x^{2n+1}}}$$
 
 
 ## 常用的计算方法
@@ -62,7 +55,15 @@ $$
 上面的介绍的算法没有具体指出公式的适用范围，只是泛泛地说 $x$ 很大或很小。具体的适用范围与所期望的计算精度有关，需要经过测试确定。
 
 
+## （The Method We Use）
+
+
+
+
+
 ## Get Function Values with High Precision
+
+
 
 * Matlab
     ```matlab

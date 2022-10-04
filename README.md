@@ -6,7 +6,7 @@ This document focuses on how to write quantum chemistry programs with C++. Besid
 It was around 2018 when I first started writing quantum chemistry programs. I was lucky enough to find a great tutorial[<sup>[1]</sup>](#ref1) from [Crawford Group](https://crawford.chem.vt.edu) as well as a book easy to understand.[<sup>[2]</sup>](#ref2) As I learned more, I found some other references that were also helpful in writing quantum chemistry programs. The aim of the project is to summarize the useful tutorials and some key points in programming so that future learners can avoid detours.
 
 ## Prerequisites
-* Quantum chemistry, it is best to have taken a relevant course or read a book on this subject.
+* Quantum chemistry. I recommend this book[<sup>[3]</sup>](#ref3) as a reference if you are not familiar with quantum chemistry.
 * C++ programming experience (500-1000 lines of code) and basic data structures.
 
 ## Feedback
@@ -20,14 +20,14 @@ In any of the above situations, you can contact me via [email](mailto:rudin.jian
 ## Table of contents
 - [Project #01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301): Something about C++ Programming.
 - [Project #02](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2302): Encapsulation of Matrix Class.
-- [Project #03](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303): The Hartree-Fock SCF procedure.
-- [Project #04](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2304): Molecular Integral Evaluation.
-- [Project #05](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2305): Hartree-Fock 解析梯度
-- [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306): Hartree-Fock Hessian 和频率计算
-- [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307): 波函数初猜和加速SCF收敛
-- [Project #08](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2308): DFT
-- [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309): CI
-- [Project #10](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2310): 
+- [Project #03](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303): Basics of Molecular Integrals.
+- [Project #04](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2304): The Hartree-Fock SCF procedure.
+- [Project #05](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2305): Molecular Integral Evaluation.
+- [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306): Hartree-Fock 解析梯度
+- [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307): Hartree-Fock Hessian 和频率计算
+- [Project #08](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2308): 波函数初猜和加速SCF收敛
+- [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309): DFT
+- [Project #10](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2310): RI and COSX
 - [Project #11](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2311)
 - [Project #12](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2312)
 - [Project #13](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2313)
