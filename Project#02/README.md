@@ -1,16 +1,17 @@
 # Project #02: Encapsulation of Matrix Class
 
-如果你不熟悉矩阵，强烈建议你先学一下这方面的内容。在整个量子化学的计算中，矩阵将是用到最多的数学知识。下面是一些不错的学习资料。
+Matrices will be the most important mathematical tool in quantum chemistry programming. If you are not familiar with matrix algebra, it is highly recommended that you learn this area first. The first chapter of *Modern Quantum Chemistry*[<sup>[1]</sup>](#ref1) is instructive. It focuses on the application of matrices in quantum chemistry, e.g. the variation method and Dirac notation. If you want to learn about matrices in a systematic way, I recommend *Introduction to Linear Algebra*[<sup>[2]</sup>](#ref2) as a textbook. The first six chapters of this book is sufficient to cope with the matrix problems encountered in quantum chemistry.
 
-- mqc chapter1
+## Why Encapsulate Matrix Class
+
+[Encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)) is used to hide the values or state of a structured data object inside a class. The ability to hide the details from the user of your code and encapsulate everything under a clear interface is a great advantage. For users of `Matrix` class,  
 
 
-## 为什么要封装矩阵类
-
+1. 暴露出在我们的项目中更常用的接口，比如生成函数可以定义更常用的。可以实现更优雅的接口。
+2. 封装最重要的优势是，只要接口不变，实现方式可以随意修改。比如在这个项目中，我将用 `eigen` 来实现矩阵的具体操作，将来如果过发现需要提升矩阵运算的速度，可以将内部实现换成`mkl`之类的。
 
 
 ## Designing Interface
-
 Designing an interface is a job that requires experience accumulation, and many aspects need to be considered.
 
 ```c++
@@ -84,6 +85,8 @@ Here I use `operator%` to represent matrix product for two reasons. First, the s
 
 计算eigenvalues和eigenvectors是使用的一个类来实现的，而不是使用类成员函数来实现，主要是因为一个矩阵的eigenvalues和eigenvectors可以同时计算，如果写两个类成员函数`Matrix::eigenVal()` 和 `Matrix::eigenVec()` 分别调用这两个函数时，有一部分计算重复了。解决这个问题的一个方法是将这个两个成员函数合并一个`Matrix::eigenValVec()`，返回一个`std::pair<Matrix, Matrix>`分别记录eigenvalues和eigenvectors。这里我们使用 [Eigen](https://eigen.tuxfamily.org/dox/classEigen_1_1SelfAdjointEigenSolver.html) 中使用的解决方法，定义一个类专门求解矩阵的eigen问题。另外，由于在量化计算中，我们通常遇到的本征值问题是对称矩阵，所以这里我们暂时先设计这个。下面是我给出的参考设计。
 
+
+
 ```c++
 class SymEigenSolver {
 public:
@@ -99,26 +102,36 @@ private:
 };
 ```
 
+与上一个 `Vec3d` 类一样，我将把矩阵类相关的内容放在 `nhfMath` 的命名空间中。
+
+
 ## Implementation of Matrix Class
 
 As mention above, this implementation of matrix class is based on [Eigen package](https://eigen.tuxfamily.org/index.php). Here is a brief introduction to how to use this package. 
 
-[Here](https://robots.uc3m.es/installation-guides/install-eigen.html) is easy. If you 
+* Install Eigen Package
+    If you are using a Linux system such as Ubuntu, You can install Eigen with one command. 
+    ```shell
+    sudo apt install libeigen3-dev
+    ```
+    [Here](https://robots.uc3m.es/installation-guides/install-eigen.html) is easy. 
 
-```shell
-sudo apt install libeigen3-dev
-```
+* 
+
 
 Eigen is 
 
 
 
-- [matrix.hpp]()
-- [matrix.cpp]()
-
-
+- [matrix.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/src/matrix.hpp)
+- [matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/src/matrix.cpp)
 
 ## Unit Testing
-In [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301#unit-testing) we have introduced what unit testing is and how to add unit testing modules to our own projects. Similarly, we will add unit testing modules to the matrix class to increase the reliability of our codes. Here is the testing module I have written for the matrix class.
+In [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301#unit-testing) we have learned what unit testing is and how to add unit testing modules to our own projects. Similarly, we will add unit testing modules to the matrix class to increase the reliability of our code. Here is the testing module I have written for `Matrix` class.
 - [test_matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/test/test_matrix.cpp)
 
+
+## Reference
+
+* <a id="ref1"></a> [1] [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996. 1-38.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
+* <a id="ref2"></a> [2] [*Introduction to Linear Algebra*. Gilbert Strang. Wellesley-Cambridge Press, 2016](https://www.amazon.com/Introduction-Linear-Algebra-Gilbert-Strang/dp/0980232775)

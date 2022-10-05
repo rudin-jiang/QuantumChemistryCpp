@@ -11,11 +11,11 @@ It was around 2018 when I first started writing quantum chemistry programs. I wa
 
 ## Feedback
 * Ask a question where you don't understand
-* Spot incorrect or incomprehensible expressions
+* Rephrase ambiguous expressions
 * Submit bugs and improve the quality of code
 * Make a suggestion for improving the document
 
-In any of the above situations, you can contact me via [email](mailto:rudin.jiang@gmail.com). I would greatly appreciate receiving any suggestions that readers may have for improving the document.
+When any of the above situations were encountered, contact me via [email](mailto:rudin.jiang@gmail.com). I would greatly appreciate receiving any suggestions that readers may have for improving the document.
 
 ## Table of contents
 - [Project #01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301): Something about C++ Programming.
