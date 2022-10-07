@@ -6,16 +6,17 @@ This tutorial mainly teaches you how to write your own quantum chemistry program
 * Classes and objects. You'd better understand some object-oriented programming ideas.
 * The Standard Template Library (STL). Be able to use vector, set and map at least.
 
-If you are new to C++, you can start by reading the section of [Crawford group's tutorial](https://github.com/CrawfordGroup/ProgrammingProjects#c-programming-tutorial-in-chemistry) that introduces C++. You can go back to some of the material when you need to use some of the features you don't know yet. If you want to master C++ more comprehensively, I recommend you to read the following book.
-
-- [*C++ Primer (5th Edition)*. Stanley B. Lippman, et al. Addison-Wesley, 2013.](https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113)
+If you are new to C++, you can start by reading the section of [Crawford group's tutorial](https://github.com/CrawfordGroup/ProgrammingProjects#c-programming-tutorial-in-chemistry) that introduces C++. You can go back to some of the material when you need to use some of the features you don't know yet. If you want to master C++ more comprehensively, I recommend you to read *C++ Primer*.[<sup>[1]</sup>](#ref1)
 
 
-In this project, we will write a class that is often used in quantum chemistry programs to help us review the C++ language. At the same time we will also learn some tools that are often used when writing large programs.
+
+
+In this project, we will write a class that is often used in quantum chemistry programs.
+（to help us review the C++ language. At the same time we will also learn some tools that are often used when writing large programs.）
 
 ## Designing Vec3d Class
 
-In quantum chemistry programs, it is often necessary to define a data type to represent a point in three-dimensional space. In C++ programs, we generally define a class to represent a point.
+In quantum chemistry programs, it is often necessary to define a data type to represent a point in three-dimensional space. In C++, we generally define a class to represent a point. 
 
 
 
@@ -27,7 +28,7 @@ In quantum chemistry programs, it is often necessary to define a data type to re
 
 ## Namespace
 
-
+You should have noticed that the above code has something like the following.
 
 ```c++
 namespace nhfMath {
@@ -37,26 +38,17 @@ namespace nhfMath {
 }
 ```
 
-
-
-
-
-> Large programs tend to use independently developed libraries. Such libraries also tend to define a large number of global names, such as classes, functions, and templates. When an application uses libraries from many different vendors, it is almost inevitable that some of these names will clash. [Namespaces](https://en.cppreference.com/w/cpp/language/namespace) provide a controlled mechanism for preventing name collisions. Namespaces partition the global namespace. A namespace is a scope. By defining a library’s names inside a namespace, library authors (and users) can avoid the limitations inherent in global names.
-
-
-
+Here we will explain what this code does. Large programs tend to use independently developed libraries. Such libraries also tend to define a large number of global name. When our program uses different libraries, it is almost inevitable that some of these global names will clash. [Namespaces](https://en.cppreference.com/w/cpp/language/namespace) provide a controlled mechanism for preventing name collisions. Names defined in a namespace are not visible in the global namespace. If you want to use a name defined in the namespace, you need to specify the namespace name. For example, if you want to use `Vec3d` defined in namespace `nhfMath`, you should use `nhfMath::Vec3d`.
 
 在使用 namespace 时需要注意的一些地方
 
 * 不要在namespace内部include头文件
 * 不要在namespace内部using其他namespace
+
+* 
 * 
 
-
-
-在这个项目中，我将把所有与数学有关的内容放在 `nhfMath` 的命名空间中，把所有与分子积分有关的内容放在 `nhfInt` 命名空间中，将其他量化计算的内容放在 `nhf` 的命名空间中。
-
-
+In this document, the items related to mathematics, molecular integral, and other quantitative calculation will be classified into the namespace `nhfMath`, `nhfInt`, and `nhf` respectively.
 
 ## Building with CMake
 
@@ -160,4 +152,4 @@ Clone [Google Benchmark](https://github.com/google/benchmark) in `extern` direct
 
 ## Reference
 
-<a>
+* <a id="ref1"></a> [1] [*C++ Primer (5th Edition)*. Stanley B. Lippman, et al. Addison-Wesley, 2013.](https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113)

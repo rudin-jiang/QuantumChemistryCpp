@@ -24,11 +24,11 @@ When any of the above situations were encountered, contact me via [email](mailto
 - [Project #04](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2304): The Hartree-Fock SCF procedure.
 - [Project #05](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2305): Molecular Integral Evaluation.
 - [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306): Hartree-Fock 解析梯度
-- [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307): Hartree-Fock Hessian 和频率计算
+- [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307): Hartree-Fock Hessian and Frequency.
 - [Project #08](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2308): 波函数初猜和加速SCF收敛
-- [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309): DFT
-- [Project #10](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2310): RI and COSX
-- [Project #11](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2311)
+- [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309): Density Functional Theory
+- [Project #10](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2310): Resolution of Identity (RI).
+- [Project #11](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2311): Chain of Spheres Exchange (COSX).
 - [Project #12](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2312)
 - [Project #13](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2313)
 - [Project #14](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2314)
