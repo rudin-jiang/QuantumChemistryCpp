@@ -21,7 +21,7 @@ In this project, we will learn some basics of basis functions and molecular inte
 [nhfstr]()
 
 
-## Read Basis Files
+## BasisFile
 
 
 ## 分子积分的类型

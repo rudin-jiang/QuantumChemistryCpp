@@ -122,13 +122,13 @@ As mention above, this implementation of matrix class is based on [Eigen package
 Eigen is 
 
 
-
-- [matrix.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/src/matrix.hpp)
-- [matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/src/matrix.cpp)
+The code below is the `Matrix` class I encapsulated with Eigen package. It's ok if you want to use other linear algebra library.
+* [matrix.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/src/matrix.hpp)
+* [matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/src/matrix.cpp)
 
 ## Unit Testing
 In [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301#unit-testing) we have learned what unit testing is and how to add unit testing modules to our own projects. Similarly, we will add unit testing modules to the matrix class to increase the reliability of our code. Here is the testing module I have written for `Matrix` class.
-- [test_matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/test/test_matrix.cpp)
+* [test_matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/test/test_matrix.cpp)
 
 
 ## Reference

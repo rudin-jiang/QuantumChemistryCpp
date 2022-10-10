@@ -38,14 +38,14 @@ public:
 
     // compound operators
     // example: Vec3d += Vec3d;
-    //          Vec3d += value;
+    //          Vec3d += double;
     Vec3d&  operator+=(const Vec3d &vec);
     Vec3d&  operator+=(double val);
 };
 
 // some operators related to Vec3d class
 // example: Vec3d + Vec3d
-//          Vec3d + value
+//          Vec3d + double
 Vec3d  operator+(const Vec3d &vec1, const Vec3d &vec2);
 Vec3d  operator+(const Vec3d &vec, double val);
 
