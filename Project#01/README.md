@@ -74,7 +74,7 @@ Here we will explain what this code does. Large programs tend to use independent
 If you want to use a name defined in the namespace, you need to specify the namespace name. For example, if you want to use `Vec3d` defined in namespace `nhfMath`, you should use `nhfMath::Vec3d`. There are two other ways to access names in a namespace.
 
 * `using nhfMath::Vec3d;` You can directly use `Vec3d` without the scope name `nhfMath::`.
-* `using namespace nhfMath;` It is highly discouraged for all the member names of the namespace `nhfMath` are visible in the current scope.
+* `using namespace nhfMath;` It is highly discouraged for all names in the namespace `nhfMath` are visible in the current scope.
 
 We need to pay attention to the following two points when we define and implement a namspace.
 * Don't put a `#include` inside the namespace.
