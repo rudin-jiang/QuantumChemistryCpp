@@ -6,25 +6,56 @@ This tutorial mainly teaches you how to write your own quantum chemistry program
 * Classes and objects. You'd better understand some object-oriented programming ideas.
 * The Standard Template Library (STL). Be able to use vector, set and map at least.
 
-If you are new to C++, you can start by reading the section of [Crawford group's tutorial](https://github.com/CrawfordGroup/ProgrammingProjects#c-programming-tutorial-in-chemistry) that introduces C++. You can go back to some of the material when you need to use some of the features you don't know yet. If you want to master C++ more comprehensively, I recommend you to read *C++ Primer*.[<sup>[1]</sup>](#ref1)
+If you are new to C++, you can start by reading the section of [Crawford group's tutorial](https://github.com/CrawfordGroup/ProgrammingProjects#c-programming-tutorial-in-chemistry) that introduces C++. You can go back to some of the material when you need to use some of the features you don't know yet. If you want to master C++ more comprehensively, I recommend *C++ Primer*.[<sup>[1]</sup>](#ref1)
 
-
-
-
-In this project, we will write a class that is often used in quantum chemistry programs.
-（to help us review the C++ language. At the same time we will also learn some tools that are often used when writing large programs.）
+In this project, we will write a class that is often used in quantum chemistry programs. Writing this class will help us review the content of C++ programming, and we will also learn some tools that are commonly used when writing large programs.
 
 ## Designing Vec3d Class
 
-In quantum chemistry programs, it is often necessary to define a data type to represent a point in three-dimensional space. In C++, we generally define a class to represent a point. 
+In quantum chemistry programs, it is often necessary to define a data type to represent a point in three-dimensional space. In C++, we generally define a class to represent a point. When we write a class, we often design the interfaces of the class first and then implement those interfaces. Here is the interface of `Vec3d` class I designed.
 
+```c++
+// Vec3d is a class for representing
+// a vector or a point in 3D space.
+class Vec3d {
+public:
+    double x, y, z;
 
+    /* constructors */
+    explicit Vec3d();
+    explicit Vec3d(double x, double y, double z);
+    explicit Vec3d(const std::string &input);
 
+    /* member functions */
+    double len() const;
+    double len2() const;
+    std::string to_string() const;
 
+    // access operator
+    // Vec3d[0] -> x    Vec3d[1] -> y   Vec3d[2] -> z
+    double  operator[](std::size_t i) const;
+    double& operator[](std::size_t i);
 
+    // compound operators
+    // example: Vec3d += Vec3d;
+    //          Vec3d += value;
+    Vec3d&  operator+=(const Vec3d &vec);
+    Vec3d&  operator+=(double val);
+};
+
+// some operators related to Vec3d class
+// example: Vec3d + Vec3d
+//          Vec3d + value
+Vec3d  operator+(const Vec3d &vec1, const Vec3d &vec2);
+Vec3d  operator+(const Vec3d &vec, double val);
+
+// dot product
+double operator%(const Vec3d &vec1, const Vec3d &vec2);
+```
+
+Here is my implementation of this class.
 * [vec3d.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/src/vec3d.hpp)
 * [vec3d.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2301/vec3d-class/src/vec3d.cpp)
-
 
 ## Namespace
 
@@ -38,21 +69,23 @@ namespace nhfMath {
 }
 ```
 
-Here we will explain what this code does. Large programs tend to use independently developed libraries. Such libraries also tend to define a large number of global name. When our program uses different libraries, it is almost inevitable that some of these global names will clash. [Namespaces](https://en.cppreference.com/w/cpp/language/namespace) provide a controlled mechanism for preventing name collisions. Names defined in a namespace are not visible in the global namespace. If you want to use a name defined in the namespace, you need to specify the namespace name. For example, if you want to use `Vec3d` defined in namespace `nhfMath`, you should use `nhfMath::Vec3d`.
+Here we will explain what this code does. Large programs tend to use independently developed libraries. Such libraries also tend to define a large number of global name. When our program uses different libraries, it is almost inevitable that some of these global names will clash. [Namespaces](https://en.cppreference.com/w/cpp/language/namespace) provide a controlled mechanism for preventing name collisions. Names defined in a namespace are not visible in the global namespace.
 
-在使用 namespace 时需要注意的一些地方
+If you want to use a name defined in the namespace, you need to specify the namespace name. For example, if you want to use `Vec3d` defined in namespace `nhfMath`, you should use `nhfMath::Vec3d`. There are two other ways to access names in a namespace.
 
-* 不要在namespace内部include头文件
-* 不要在namespace内部using其他namespace
+* `using nhfMath::Vec3d;`
+You can directly use `Vec3d` without the scope name `nhfMath::`. This is recommended if `Vec3d` will be often used in the later code.
 
-* 
-* 
+* `using namespace nhfMath;`
+All the member names of the namespace `nhfMath` are visible in the current scope. It is highly discouraged, as there is a risk of names clash.
 
-In this document, the items related to mathematics, molecular integral, and other quantitative calculation will be classified into the namespace `nhfMath`, `nhfInt`, and `nhf` respectively.
+We need to pay attention to the following two points when we define and implement a namspace.
+* Don't put a `#include` inside the namespace.
+* Don't put a `using namespace` inside the namespace.
+
+More details about namespace can be found in section 18.2 of the *C++ Primer*.[<sup>[1]</sup>](#ref1) In this document, the items related to mathematics, molecular integral, and other content related to quantum chemistry will be classified into the namespace `nhfMath`, `nhfInt`, and `nhf` respectively.
 
 ## Building with CMake
-
-
 
 When we want to develop large programs, we often need to use build tools. There are many build tools, here we use [CMake](https://cmake.org). CMake is a cross-platform build tool.
 

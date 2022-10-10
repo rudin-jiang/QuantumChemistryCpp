@@ -1,10 +1,10 @@
 add_library(
-    nhfMath
+    nhfmath
     vec3d.cpp
 )
 
 target_include_directories(
-    nhfMath PUBLIC
+    nhfmath PUBLIC
     .
 )
 
@@ -16,5 +16,5 @@ add_executable(
 
 target_link_libraries(
     main PRIVATE
-    nhfMath
+    nhfmath
 )

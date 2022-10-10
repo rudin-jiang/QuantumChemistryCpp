@@ -5,7 +5,7 @@ add_executable(
 
 target_link_libraries(
     test_vec3d PRIVATE
-    nhfMath
+    nhfmath
     gtest
     gtest_main
 )

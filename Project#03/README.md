@@ -2,12 +2,26 @@
 
 In this project, we will learn some basics of basis functions and molecular integrals, and implement a simple molecular integral algorithm in preparation for next project about Hartree-Fork SCF.
 
-
 ## Basis Functions
 
+[*Basis Set Exchange*](https://www.basissetexchange.org/)
 
 
+```
 
+```
+
+
+## String Operation and `nhfStr` 
+
+
+在这个量子化学编程中很多地方需要用到字符串处理的函数，这里我把他们打包在 nhfstr 的子模块中并且 放在 `nhfStr` 的命名空间。
+
+
+[nhfstr]()
+
+
+## Read Basis Files
 
 
 ## 分子积分的类型
@@ -39,14 +53,17 @@ $$
 
 ```c++
 #include <cmath>
+#include <cstddef>
 
-double boysfun(int n, double x) {
+static const double pi = 3.14;
+
+double boysfun(std::size_t n, double x) {
     if (x < 1e-5)
         return 1.0 / (2.0 * x + 1);
     else if (n == 0)
         return 0.5 * std::sqrt(M_PI / x) * std::erf(std::sqrt(x));
     else
-        return 0.5 / x * ( (2*n -1) * boysfun(n - 1, x) - exp(-x) );
+        return 0.5 / x * ( (2*n-1) * boysfun(n-1, x) - std::exp(-x) );
 }
 ```
 
