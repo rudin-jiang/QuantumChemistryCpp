@@ -85,7 +85,7 @@ Here I use `operator%` to represent matrix product for two reasons. First, the s
 
 计算eigenvalues和eigenvectors是使用的一个类来实现的，而不是使用类成员函数来实现，主要是因为一个矩阵的eigenvalues和eigenvectors可以同时计算，如果写两个类成员函数`Matrix::eigenVal()` 和 `Matrix::eigenVec()` 分别调用这两个函数时，有一部分计算重复了。解决这个问题的一个方法是将这个两个成员函数合并一个`Matrix::eigenValVec()`，返回一个`std::pair<Matrix, Matrix>`分别记录eigenvalues和eigenvectors。这里我们使用 [Eigen](https://eigen.tuxfamily.org/dox/classEigen_1_1SelfAdjointEigenSolver.html) 中使用的解决方法，定义一个类专门求解矩阵的eigen问题。另外，由于在量化计算中，我们通常遇到的本征值问题是对称矩阵，所以这里我们暂时先设计这个。下面是我给出的参考设计。
 
-
+The functions for computing the eigenvalues and eigenfunctions of a matrix are implemented as a class.
 
 
 

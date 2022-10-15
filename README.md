@@ -23,7 +23,7 @@ When any of the above situations were encountered, contact me via [email](mailto
 - [Project #03](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303): Basics of Molecular Integrals.
 - [Project #04](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2304): The Hartree-Fock SCF procedure.
 - [Project #05](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2305): Molecular Integral Evaluation.
-- [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306): Hartree-Fock 解析梯度
+- [Project #06](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2306): Hartree-Fock Analytic Gradient.
 - [Project #07](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2307): Hartree-Fock Hessian and Frequency.
 - [Project #08](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2308): 波函数初猜和加速SCF收敛
 - [Project #09](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2309): Density Functional Theory

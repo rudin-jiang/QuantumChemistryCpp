@@ -1,11 +1,17 @@
+add_subdirectory(nhfmath)
+add_subdirectory(nhfstr)
+
 add_library(
     nhfint
-    shell.cpp
-    elembasis.cpp
     basisfile.cpp
 )
 
 target_include_directories(
     nhfint PUBLIC
     .
+)
+
+target_link_libraries(
+    nhfint
+    nhfstr
 )

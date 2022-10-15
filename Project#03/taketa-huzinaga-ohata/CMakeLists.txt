@@ -18,7 +18,6 @@ if (WIN32)
     add_definitions(-DNOMINMAX)
 endif()
 
-add_subdirectory(extern/nhfmath)
 add_subdirectory(src)
 
 # add_subdirectory(extern/googletest)
