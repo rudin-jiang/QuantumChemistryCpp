@@ -57,7 +57,30 @@ $$
 
 ## （The Method We Use）
 
+在实现一个具体的 Boys 函数算法之前，我们首先要考虑实现的函数的适用范围，即 $n$ 和 $x$ 在什么范围内程序保证正确。在不考虑优化的情况下，计算分子积分时所需使用的 $F_n(x)$ 的自变量范围是
+$$
+\begin{align}
+0 \leq n &\leq 4 l_{max} \nonumber\\
+0 \leq x &< \infty \nonumber
+\end{align}
+$$ 其中 $l_{max}$ 为所使用到的基函数最大的角量子数。考虑到现在已有的基函数的类型有 $S$、$P$、$D$、$F$、$G$、$H$ 和 $I$ ，因此取 $l_{max} = 6$ ，所以 $n \leq 24$ 。（放宽边界）选定 $0 \leq n \leq 32$ 为程序认为合法的输入范围，因此所需实现的自变量的范围是
+$$
+\begin{align}
+0 \leq n &\leq 32 \nonumber\\
+0 \leq x &< \infty \nonumber
+\end{align}
+$$
 
+（经过测试，选用如下算法）
+* 当 $0 \leq x \leq 150$ 时，使用打表的方法， $x$ 间隔 $0.1$ 打表，即在 $x = 0.0, 0.1, 0.2, \cdots, 150.0$ 处，对 $n = 0 \sim 40$ 打表。前面说程序确保 $0 \leq n \leq 32$ 为合法的输入，这里对 $n$ 多打几项作为最后几个 $n$ 的导数使用。当计算函数值时，对 $k = 0 \sim 6$ 前 $7$ 项求和，即
+$$F_n(x_t + \Delta x) \approx \sum_{k = 0}^{6} \frac{F_{n+k}(x_t)\,(-\Delta x)^{k}}{k!}$$
+
+* 当 $x > 150$ 时，使用近似表达式计算
+$$F_n(x) \approx  \frac{(2n-1)!!}{2^{n+1}}\sqrt{\frac{\pi}{x^{2n+1}}}$$
+
+
+
+（TODO）
 
 
 

@@ -12,8 +12,7 @@ In this project, we will learn some basics of basis functions and molecular inte
 ```
 
 
-## String Operation and `nhfStr` 
-
+## String Operation
 
 在这个量子化学编程中很多地方需要用到字符串处理的函数，这里我把他们打包在 nhfstr 的子模块中并且 放在 `nhfStr` 的命名空间。
 
@@ -22,6 +21,11 @@ In this project, we will learn some basics of basis functions and molecular inte
 
 
 ## BasisFile
+
+在做计算前，我们需要根据原子的种类和坐标信息从基组的文件中读取基组信息和产生基组。为了降低编程的复杂性，我们将产设基组的工作分为两步，第一步仅仅读取基组文件，将基组文件中的信息完全的读取到程序中，在这一步中我们不需要考虑我们所需要的原子种类以及原子的坐标。第二步，根据原子的种类和坐标以及第一步中读取的基组文件的信息生成体系的基组。
+
+[basisfile](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303/basisfile)
+
 
 
 ## 分子积分的类型

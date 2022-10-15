@@ -87,6 +87,9 @@ Here I use `operator%` to represent matrix product for two reasons. First, the s
 
 
 
+
+
+
 ```c++
 class SymEigenSolver {
 public:
@@ -102,7 +105,7 @@ private:
 };
 ```
 
-与上一个 `Vec3d` 类一样，我将把矩阵类相关的内容放在 `nhfMath` 的命名空间中。
+Just like the `Vec3d` class in [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301#namespace), I put the `Matrix` class in the namespace `nhfMath`.
 
 
 ## Implementation of Matrix Class

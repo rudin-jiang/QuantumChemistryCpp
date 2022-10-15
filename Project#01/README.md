@@ -84,9 +84,10 @@ More details about namespace can be found in section 18.2 of the *C++ Primer*.[<
 
 ## Building with CMake
 
-When we want to develop large programs, we often need to use build tools. There are many build tools, here we use [CMake](https://cmake.org). CMake is a cross-platform build tool.
+When we want to develop large programs, we often need to use build tools. There are many build tools, here we use [CMake](https://cmake.org). CMake is a cross-platform build tool. 在官网上有一个不错的教程， [CMake Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)，在这里我将会用我觉得易于理解的方式进行介绍。
 
-[CMake Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
+
+
 
 
 
