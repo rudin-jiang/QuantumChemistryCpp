@@ -6,7 +6,6 @@ add_library(
     matrix.cpp
 )
 
-
 target_include_directories(
     nhfmath PUBLIC
     ${EIGEN3_INCLUDE_DIR}

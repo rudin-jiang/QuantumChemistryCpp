@@ -1,5 +1,3 @@
-# nhfmath
+# NhfMath
 
-This is a subproject of `nhf`. 
-
-我在这里将p1中的 `Vec3d` 和 `Matrix` 整合到一个 `nhfMath` 中。
+This is a subproject of `nhf`. We merge `nhfMath::Vec3d` in [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301#designing-vec3d-class) and `nhfMath::Matrix` in [Project#02](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2302#project-02-encapsulation-of-matrix-class) into one library. 
