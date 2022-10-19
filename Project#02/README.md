@@ -4,12 +4,10 @@ Matrices will be the most important mathematical tool in quantum chemistry progr
 
 ## Why Encapsulate Matrix Class
 
-[Encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)) is used to hide the values or state of a structured data object inside a class. The ability to hide the details from the user of your code and encapsulate everything under a clear interface is a great advantage. For users of `Matrix` class,  
+[Encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)) is used to hide the values or state of a structured data object inside a class. The ability to hide the details from the user of your code and encapsulate everything under a clear interface is a great advantage. For users of  `Matrix` class, they only need to know how to use the class, and don't care how the class are implemented. From the perspective of developing large programs, encapsulating a class has the following two additional benefits.
 
-
-1. 暴露出在我们的项目中更常用的接口，比如生成函数可以定义更常用的。可以实现更优雅的接口。
-2. 封装最重要的优势是，只要接口不变，实现方式可以随意修改。比如在这个项目中，我将用 `eigen` 来实现矩阵的具体操作，将来如果过发现需要提升矩阵运算的速度，可以将内部实现换成`mkl`之类的。
-
+1. We can design the interfaces that are commonly used in the project according to the needs of the project.
+2. We can modify the implementation as long as the interface remains the same. In this program, [Eigen package](https://eigen.tuxfamily.org/index.php) is applied to implement the `Matrix` class. In the future, other packages like [Intel Math Kernel Library](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html#gs.g2e3e9) will be considered to improve the computational speed if necessary. At that time, we do not need to modify the code other than the `Matrix` class.
 
 ## Designing Interface
 Designing an interface is a job that requires experience accumulation, and many aspects need to be considered.
@@ -88,8 +86,6 @@ Here I use `operator%` to represent matrix product for two reasons. First, the s
 The functions for computing the eigenvalues and eigenfunctions of a matrix are implemented as a class.
 
 
-
-
 ```c++
 class SymEigenSolver {
 public:
@@ -117,13 +113,29 @@ As mention above, this implementation of matrix class is based on [Eigen package
     ```shell
     sudo apt install libeigen3-dev
     ```
-    [Here](https://robots.uc3m.es/installation-guides/install-eigen.html) is easy. 
+    Users of the windows operating system can refer to [this tutorial](https://robots.uc3m.es/installation-guides/install-eigen.html) to install it.
 
-* 
+* Use Eigen with CMake
+    Eigen is a [header-only](https://en.wikipedia.org/wiki/Header-only) library, which means all we ever need is the path to the include directory. The following cmake commands will find the location of Eigen's header files.
+    ```cmake
+    find_package(Eigen3 REQUIRED)
 
+    add_library(
+        nhfmath
+        matrix.cpp
+    )
 
-Eigen is 
+    target_include_directories(
+        nhfmath PUBLIC
+        ${EIGEN3_INCLUDE_DIR}
+        .
+    )
+    ```
 
+* 12
+    * 23
+    * 34
+    * 45
 
 The code below is the `Matrix` class I encapsulated with Eigen package. It's ok if you want to use other linear algebra library.
 * [matrix.hpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/src/matrix.hpp)
@@ -133,8 +145,8 @@ The code below is the `Matrix` class I encapsulated with Eigen package. It's ok 
 In [Project#01](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2301#unit-testing) we have learned what unit testing is and how to add unit testing modules to our own projects. Similarly, we will add unit testing modules to the matrix class to increase the reliability of our code. Here is the testing module I have written for `Matrix` class.
 * [test_matrix.cpp](https://github.com/rudin-jiang/QuantumChemistryCpp/blob/master/Project%2302/matrix-class/test/test_matrix.cpp)
 
-
 ## Reference
 
 * <a id="ref1"></a> [1] [*Modern Quantum Chemistry*. Attila Szabo and Neil S. Ostlund. Dover Publications, 1996. 1-38.](https://www.amazon.com/Modern-Quantum-Chemistry-Introduction-Electronic/dp/0486691861)
 * <a id="ref2"></a> [2] [*Introduction to Linear Algebra*. Gilbert Strang. Wellesley-Cambridge Press, 2016](https://www.amazon.com/Introduction-Linear-Algebra-Gilbert-Strang/dp/0980232775)
+* <a id="ref3"></a> [3] [The API documentation for Eigen3.](http://eigen.tuxfamily.org/dox/index.html)

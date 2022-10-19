@@ -72,10 +72,6 @@ public:
 ## 一些方法的实现
 
 
-
-### Taketa-Huzinaga-Oohata Scheme
-
-
 ### Gaussian One-Electron Integrals Methods
 
 
@@ -94,10 +90,7 @@ subproject
 [Boys Function](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2305/boys-function)
 
 
-
 ## 导数
-
-
 
 
 ## Screening

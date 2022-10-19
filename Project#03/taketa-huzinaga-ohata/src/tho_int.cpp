@@ -1,25 +1,34 @@
 #include "tho_int.hpp"
+#include "mathfun.hpp"
+#include "constant.hpp"
 #include <cmath>
-
-
-namespace {
-
-const double nhfPi = 3.14159265358979323846;
-
-double binom_coeff(int i, int l1, int l2, double PAx, double PBx);
-double double_factorial(int n);
-
-double boysfun(int n, double x) {
-    if (x < 1e-5) return 1.0 / (2.0 * n + 1);
-    if (n == 0) return 0.5 * std::sqrt(nhfPi/x) * std::erf(std::sqrt(x));
-    return 0.5 / x * ( (2*n -1) * boysfun(n-1, x) - std::exp(-x) );
-}
-
-}  // anonymous namespace
 
 
 namespace nhfInt {
 namespace tho {
+
+
+double binom_coeff(int j, int l, int m, double a, double b) {
+    double ret = 0.0;
+
+    for (int p = 0; p <= l; ++p) {
+        int q = j - p;
+        if (q >= 0 && q <= m)
+            ret += nhfMath::combination(l, p) * 
+                   nhfMath::combination(m, q) *
+                   std::pow(a, l-p) *
+                   std::pow(b, m-q);
+    }
+
+    return ret;
+}
+
+double boysfun(int n, double x) {
+    if (x < 1e-5) return 1.0 / (2.0 * n + 1);
+    if (n == 0) return 0.5 * std::sqrt(nhfMath::PI/x) * std::erf(std::sqrt(x));
+    return 0.5 / x * ( (2*n -1) * boysfun(n-1, x) - std::exp(-x) );
+}
+
 
 // ==================== gauss overlap =====================
 

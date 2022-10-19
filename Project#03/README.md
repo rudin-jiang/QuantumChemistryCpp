@@ -20,8 +20,6 @@ In this project, we will learn some basics of basis functions and molecular inte
 
 
 
-
-
 ## Three Subprojects 
 
 * [NhfMath](https://github.com/rudin-jiang/QuantumChemistryCpp/tree/master/Project%2303/nhfmath)
@@ -57,8 +55,6 @@ $$
 
 
 ```c++
-const double nhfPi = 3.14159265358979323846;
-
 double boysfun(int n, double x) {
     if (x < 1e-5) return 1.0 / (2.0 * n + 1);
     if (n == 0) return 0.5 * std::sqrt(nhfPi/x) * std::erf(std::sqrt(x));

@@ -4,6 +4,8 @@ add_library(
     nhfmath
     vec3d.cpp
     matrix.cpp
+    mathfun.cpp
+    constant.cpp
 )
 
 target_include_directories(
