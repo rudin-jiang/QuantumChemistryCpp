@@ -14,7 +14,7 @@ double binom_coeff(int j, int l, int m, double a, double b) {
     for (int p = 0; p <= l; ++p) {
         int q = j - p;
         if (q >= 0 && q <= m)
-            ret += nhfMath::combination(l, p) * 
+            ret += nhfMath::combination(l, p) *
                    nhfMath::combination(m, q) *
                    std::pow(a, l-p) *
                    std::pow(b, m-q);
@@ -42,7 +42,7 @@ double gauss_int_overlap_1D(double alpha1, int l1, int x1,
 
     for (int i = 0; i <= (l1+l2)/2; ++i) {
         ret +=   binom_coeff(2 * i, l1, l2, PAx, PBx)
-               * double_factorial(2 * i - 1)
+               * nhfMath::semifactorial(2 * i - 1)
                / std::pow(2.0 * (alpha1 + alpha2), i);
     }
     return  ret;

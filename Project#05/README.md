@@ -4,6 +4,8 @@
 
 ### Huckel
 
+[wiki](https://en.wikipedia.org/wiki/Extended_H%C3%BCckel_method)
+
 ### Harris
 
 ## Convergence Acceleration
