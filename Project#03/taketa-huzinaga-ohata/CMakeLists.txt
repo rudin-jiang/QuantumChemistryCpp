@@ -20,7 +20,7 @@ endif()
 
 add_subdirectory(src)
 
-# add_subdirectory(extern/googletest)
-# add_subdirectory(test)
+add_subdirectory(extern/googletest)
+add_subdirectory(test)
 
 

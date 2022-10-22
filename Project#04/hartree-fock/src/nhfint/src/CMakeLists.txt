@@ -1,6 +1,3 @@
-add_subdirectory(nhfmath)
-add_subdirectory(nhfstr)
-
 add_library(
     nhfint
     basisfile.cpp

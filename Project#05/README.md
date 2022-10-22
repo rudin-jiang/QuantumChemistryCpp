@@ -2,6 +2,9 @@
 
 ## Initial Guess
 
+
+
+
 ### Huckel
 
 [wiki](https://en.wikipedia.org/wiki/Extended_H%C3%BCckel_method)
@@ -15,3 +18,9 @@
 ### C2DIIS
 
 ### EDIIS
+
+
+
+
+
+* [1] []()

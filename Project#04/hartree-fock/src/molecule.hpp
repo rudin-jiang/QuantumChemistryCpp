@@ -23,7 +23,7 @@ public:
     Molecule() : charge(0), multip(0) {}
     Molecule(std::istream &is);
 
-    int n_elec() const;
+    std::size_t n_elec() const;
 };
 
 
