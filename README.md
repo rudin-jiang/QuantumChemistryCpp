@@ -29,7 +29,7 @@ When any of the above situations were encountered, contact me via [email](mailto
 - [Project #09](./Project%2309): Density Functional Theory
 - [Project #10](./Project%2310): Resolution of Identity (RI).
 - [Project #11](./Project%2311): Chain of Spheres Exchange (COSX).
-- [Project #12](./Project%2312)
+<!-- - [Project #12](./Project%2312)
 - [Project #13](./Project%2313)
 - [Project #14](./Project%2314)
 - [Project #15](./Project%2315)
@@ -37,7 +37,7 @@ When any of the above situations were encountered, contact me via [email](mailto
 - [Project #17](./Project%2317)
 - [Project #18](./Project%2318)
 - [Project #19](./Project%2319)
-- [Project #20](./Project%2320)
+- [Project #20](./Project%2320) -->
 
 
 ## Acknowledge
