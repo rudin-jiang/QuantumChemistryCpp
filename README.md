@@ -22,10 +22,10 @@ When any of the above situations were encountered, contact me via [email](mailto
 - [Project #02](./Project%2302): Encapsulation of Matrix Class.
 - [Project #03](./Project%2303): Basics of Molecular Integrals.
 - [Project #04](./Project%2304): The Hartree-Fock SCF procedure.
-- [Project #08](./Project%2305): Initial Guess and Convergence Acceleration.
-- [Project #05](./Project%2306): Molecular Integral Evaluation.
-- [Project #06](./Project%2307): Hartree-Fock Analytic Gradient.
-- [Project #07](./Project%2308): Hartree-Fock Hessian and Frequency.
+- [Project #05](./Project%2305): Initial Guess and Convergence Acceleration.
+- [Project #06](./Project%2306): Molecular Integral Evaluation.
+- [Project #07](./Project%2307): Hartree-Fock Analytic Gradient.
+- [Project #08](./Project%2308): Hartree-Fock Hessian and Frequency.
 - [Project #09](./Project%2309): Density Functional Theory
 - [Project #10](./Project%2310): Resolution of Identity (RI).
 - [Project #11](./Project%2311): Chain of Spheres Exchange (COSX).
